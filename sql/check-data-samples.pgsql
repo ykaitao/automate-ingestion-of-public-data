@@ -1,0 +1,1 @@
+SELECT * FROM "hospitals_reporting_percentage" LIMIT 1000;
