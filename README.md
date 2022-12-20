@@ -23,3 +23,7 @@ Automate ingestion of consistently updated public data sources into (ideally) Po
 >>> \q # quit PostgreSQL database server
 >>> exit # quit `postgres` account
 ```
+
+```bash
+>>> crontab -e # schedule pipeline
+```
