@@ -11,7 +11,8 @@ Automate ingestion of consistently updated public data sources into (ideally) Po
 # create table docs https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-create-table/
 # datatype docs: https://www.postgresql.org/docs/9.1/datatype-numeric.html
 >>> CREATE TABLE IF NOT EXISTS hospitals_reporting_percentage(
-    state VARCHAR(5) NOT NULL,
+    datestamp timestamptz NOT NULL DEFAULT NOW(),
+    state TEXT NOT NULL,
     reported INT NOT NULL,
     total INT NOT NULL,
     percentage_reporting REAL NOT NULL
