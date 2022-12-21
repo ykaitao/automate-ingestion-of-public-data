@@ -14,8 +14,6 @@ pip install -r requirements.txt
 >>> CREATE DATABASE healthdata;
 >>> \l # show databases
 >>> \c healthdata # change to database `healthdata`
-# create table docs https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-create-table/
-# datatype docs: https://www.postgresql.org/docs/9.1/datatype-numeric.html
 >>> CREATE TABLE IF NOT EXISTS hospitals_reporting_percentage(
     datestamp timestamptz NOT NULL DEFAULT NOW(),
     state TEXT NOT NULL,
